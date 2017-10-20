@@ -95,4 +95,38 @@
 
         </script>
     </body>
+
+<script src="../d3plus.v2.js"></script>
+
+<body>
+
+</body>
+
+<script>
+
+  const points = [
+    {id: "Boston", value: 1834, point: [-71.0589, 42.3601], country: "usa"},
+    {id: "Belo Horizonte", value: 2602, point: [-43.93778, -19.92083], country: "bra"}
+  ];
+
+  let geomap = new d3plus.Geomap()
+    .data(points)
+    .ocean("#eef")
+    .tiles(true)
+
+  // set custom ticks w backgroundImages
+  geomap
+    .pointSize(d => d.value)
+    .shapeConfig({
+      backgroundImage: d => `../img/flag-${d.country}.png`
+    })
+
+  // they are really small!
+  geomap.pointSizeMin(10);
+
+  geomap.render();
+
+
+</script>
+
 </html>
