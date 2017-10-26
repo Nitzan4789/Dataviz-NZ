@@ -1,0 +1,55 @@
+body {
+   margin: 0;
+   text-align: center;
+   padding: 2%;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 70%;
+   h1 { text-align: center };
+
+
+}
+.page {
+   margin: 0 auto;
+   max-width: 800px;
+   width: 100%;
+}
+#viz-container{
+   position: relative;
+   margin: 0 auto;
+   height: 1000px;
+   width: 100%;
+   padding-top: 50px;
+   padding-bottom: 100px;
+}
+.single_viz{
+   float: left;
+   margin-bottom: 10px;
+   height: 1000px;
+   width: 100%;
+   padding-top: 100px;
+   padding-bottom: 100px;
+   /*background-color: black;*/
+
+}
+#map{
+   height: 400px;
+
+}
+
+#favorite{
+   height: 500px;
+
+
+}
+.chart{
+   position: relative;
+   float: center;
+   height: 100%;
+   width: 70%;
+}
+#legend{
+   position: relative;
+   float: center;
+   height: 60px;
+   width: 100%;
+}
